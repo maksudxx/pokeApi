@@ -1,0 +1,12 @@
+.headerContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
