@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export const PokeNavbar = () => {
   const [click, setClick] = useState("Inicio");
-  const optionClick = (item) => {
+  const isActive = (item) => {
     setClick(item);
   };
   return (
@@ -21,7 +21,7 @@ export const PokeNavbar = () => {
               : `${styles.navOptions} ${styles.optionInicio}`
           }
           onClick={() => {
-            optionClick("Inicio");
+            isActive("Inicio");
           }}
         >
           <img src={iconPikachu} alt="pikachu-icon" />
@@ -34,7 +34,7 @@ export const PokeNavbar = () => {
               : `${styles.navOptions} ${styles.optionPokedex}`
           }
           onClick={() => {
-            optionClick("Pokedex");
+            isActive("Pokedex");
           }}
         >
           <img src={iconPokeball} alt="pokeball-icon" />
@@ -47,7 +47,7 @@ export const PokeNavbar = () => {
               : `${styles.navOptions} ${styles.optionAplicaciones}`
           }
           onClick={() => {
-            optionClick("Aplicaciones");
+            isActive("Aplicaciones");
           }}
         >
           <img src={iconAplicaciones} alt="phone-icon" />
@@ -60,7 +60,7 @@ export const PokeNavbar = () => {
               : `${styles.navOptions} ${styles.optionEventos}`
           }
           onClick={() => {
-            optionClick("Eventos");
+            isActive("Eventos");
           }}
         >
           <img src={iconPlayer} alt="play-icon"></img>
@@ -73,7 +73,7 @@ export const PokeNavbar = () => {
               : `${styles.navOptions} ${styles.optionNoticias}`
           }
           onClick={() => {
-            optionClick("Noticias");
+            isActive("Noticias");
           }}
         >
           <img src={iconNoticias} alt="pokedex-icon" />
