@@ -1,12 +1,114 @@
-.headerContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  font-family: "Orbitron", sans-serif;
 }
 
-.navContainer{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navContainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.navOptions {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.navOptions img {
+  width: 35%;
+}
+
+.navOptions p {
+  margin: 5px;
+}
+
+/*Item inicio*/
+.optionInicio {
+  border-bottom: 8px solid #919191;
+  border-bottom-left-radius: 6px;
+}
+.optionInicio:hover {
+  background: #919191;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.isActiveInicio {
+  background: #919191;
+  color: #fff;
+}
+
+/*Item Pokedex*/
+.optionPokedex {
+  border-bottom: 8px solid #e3350d;
+}
+.optionPokedex:hover {
+  background: #e3350d;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.isActivePokedex {
+  background: #e3350d;
+  color: #fff;
+}
+
+/*Item Aplicaciones*/
+.optionAplicaciones {
+  border-bottom: 8px solid #ee6b2f;
+}
+.optionAplicaciones:hover {
+  background: #ee6b2f;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.isActiveAplicaciones {
+  background: #ee6b2f;
+  color: #fff;
+}
+
+/*Item Eventos*/
+.optionEventos {
+  border-bottom: 8px solid #4dad5b;
+}
+.optionEventos:hover {
+  background: #4dad5b;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.isActiveEventos {
+  background: #4dad5b;
+  color: #fff;
+}
+
+/*Item Noticias*/
+.optionNoticias {
+  border-bottom: 8px solid #309bc5;
+  border-bottom-right-radius: 6px;
+}
+.optionNoticias:hover {
+  background: #309bc5;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.isActiveNoticias {
+  background: #309bc5;
+  color: #fff;
 }
