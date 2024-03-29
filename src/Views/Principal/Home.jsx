@@ -1,4 +1,4 @@
-import { PokeNavbar } from "../../components/PokeNavbar"
+import { PokeNavbar } from "../../components/PokeNavbar/PokeNavbar"
 
 export const Home = () => {
   return (
