@@ -2,8 +2,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: 100px;
   font-family: "Orbitron", sans-serif;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 .navContainer{
@@ -24,7 +26,7 @@
 }
 
 .navOptions img {
-  width: 35%;
+  width: 20%;
 }
 
 .navOptions p {
