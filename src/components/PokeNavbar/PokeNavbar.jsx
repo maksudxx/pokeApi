@@ -8,6 +8,8 @@ import { useState } from "react";
 
 export const PokeNavbar = () => {
   const [click, setClick] = useState("Inicio");
+  const [isOpen, setIsOpen] = useState(false);
+
   const isActive = (item) => {
     setClick(item);
   };
