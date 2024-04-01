@@ -1,9 +1,9 @@
-import { PokeNavbar } from "../../components/PokeNavbar/PokeNavbar"
+import { PokeNavbar } from "../../components/PokeNavbar/PokeNavbar";
 
 export const Inicio = () => {
   return (
     <>
-        <PokeNavbar/>
+      <PokeNavbar />
     </>
-  )
-}
+  );
+};
