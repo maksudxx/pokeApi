@@ -1,6 +1,6 @@
 import { PokeNavbar } from "../../components/PokeNavbar/PokeNavbar"
 
-export const Home = () => {
+export const Inicio = () => {
   return (
     <>
         <PokeNavbar/>
