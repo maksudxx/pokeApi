@@ -3,6 +3,7 @@ import iconPikachu from "../../assets/Icons/pikachu_pokemon_icon.png";
 import iconPokeball from "../../assets/Icons/pokeball_pokemon_icon.png";
 import iconPlayer from "../../assets/Icons/play_pokemon_icon.png";
 import iconNoticias from "../../assets/Icons/pokedex_pokemon_icon.png";
+import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./PokeNavbar.module.css";
 import { useState } from "react";
 
@@ -15,6 +16,16 @@ export const PokeNavbar = () => {
   };
   return (
     <header className={styles.headerContainer}>
+      <nav className={styles.containerResponsive}>
+        <GiHamburgerMenu />
+        <div>
+          <div>Inicio</div>
+          <div>Pokédex</div>
+          <div>Aplicaciones</div>
+          <div>Eventos</div>
+          <div>Noticias</div>
+        </div>
+      </nav>
       <nav className={styles.navContainer}>
         <div
           className={
