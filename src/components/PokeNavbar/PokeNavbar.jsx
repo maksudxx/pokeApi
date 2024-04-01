@@ -11,14 +11,18 @@ export const PokeNavbar = () => {
   const [click, setClick] = useState("Inicio");
   const [isOpen, setIsOpen] = useState(false);
 
+  //VERIFICA SI EL MENU EN EL MODO RESPONSIVE ESTA ABIERTO O CERRADO
   const toggleMenu = (isOpen) => {
     setIsOpen(!isOpen);
   };
+
+  //CONTROLA QUE OPCION DEL NAVBAR ESTA ACTIVO ACTUALMENTE PARA EL RENDERIZADO CONDICIONAL
   const isActive = (item) => {
     setClick(item);
   };
   return (
     <header className={styles.headerContainer}>
+     
       {/* INICIO Menu Responsive */}
       <nav className={styles.containerResponsive}>
         <div className={styles.containerResponsiveMenu}>
