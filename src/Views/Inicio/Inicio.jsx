@@ -3,7 +3,7 @@ import { PokeNavbar } from "../../components/PokeNavbar/PokeNavbar";
 export const Inicio = () => {
   return (
     <>
-      <PokeNavbar />
+      <h1>POKEMONES</h1>
     </>
   );
 };
