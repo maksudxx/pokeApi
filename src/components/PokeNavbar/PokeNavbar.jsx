@@ -11,21 +11,52 @@ export const PokeNavbar = () => {
   const [click, setClick] = useState("Inicio");
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = (isOpen) => {
+    setIsOpen(!isOpen);
+  };
   const isActive = (item) => {
     setClick(item);
   };
   return (
     <header className={styles.headerContainer}>
+      {/* INICIO Menu Responsive */}
       <nav className={styles.containerResponsive}>
-        <GiHamburgerMenu />
-        <div>
-          <div>Inicio</div>
-          <div>Pokédex</div>
-          <div>Aplicaciones</div>
-          <div>Eventos</div>
-          <div>Noticias</div>
+        <div className={styles.containerResponsiveMenu}>
+          <GiHamburgerMenu
+            onClick={() => toggleMenu(isOpen)}
+            className={styles.containerResponsiveMenuButton}
+          />
+        </div>
+        <div
+          className={
+            isOpen === false
+              ? `${styles.containerResponsiveOptionsHidden}`
+              : `${styles.containerResponsiveOptionsActive}`
+          }
+        >
+          <div className={`${styles.containerResponsiveOption} ${styles.containerResponsiveOptionInicio}`}>
+            <img src={iconPikachu} alt="pikachu-icon" />
+            <p>Inicio</p>
+          </div>
+          <div className={`${styles.containerResponsiveOption} ${styles.containerResponsiveOptionPokedex}`}>
+            <img src={iconPokeball} alt="pokeball-icon" />
+            <p>Pokédex</p>
+          </div>
+          <div className={`${styles.containerResponsiveOption} ${styles.containerResponsiveOptionAplicaciones}`}>
+            <img src={iconAplicaciones} alt="phone-icon" />
+            <p>Aplicaciones</p>
+          </div>
+          <div className={`${styles.containerResponsiveOption} ${styles.containerResponsiveOptionEventos}`}>
+            <img src={iconPlayer} alt="play-icon"></img>
+            <p>Eventos</p>
+          </div>
+          <div className={`${styles.containerResponsiveOption} ${styles.containerResponsiveOptionNoticias}`}>
+            <img src={iconNoticias} alt="pokedex-icon" />
+            <p>Noticias</p>
+          </div>
         </div>
       </nav>
+      {/* FIN MENU RESPONSIVE */}
       <nav className={styles.navContainer}>
         <div
           className={
