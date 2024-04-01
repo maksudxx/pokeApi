@@ -1,3 +1,4 @@
+import { useState } from "react";
 import iconAplicaciones from "../../assets/Icons/phone_play_icon.png";
 import iconPikachu from "../../assets/Icons/pikachu_pokemon_icon.png";
 import iconPokeball from "../../assets/Icons/pokeball_pokemon_icon.png";
@@ -5,7 +6,7 @@ import iconPlayer from "../../assets/Icons/play_pokemon_icon.png";
 import iconNoticias from "../../assets/Icons/pokedex_pokemon_icon.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styles from "./PokeNavbar.module.css";
-import { useState } from "react";
+
 
 export const PokeNavbar = () => {
   const [click, setClick] = useState("Inicio");
