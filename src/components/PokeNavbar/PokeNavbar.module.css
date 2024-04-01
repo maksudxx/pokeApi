@@ -156,12 +156,9 @@
 
   .containerResponsiveOptionsActive {
     width: 100%;
-    /* padding-left: 20px; */
     height: auto;
     background: #313131;
-    transition: 0.5s initial;
     color: #fff;
-    transform: translateY(0);
   }
 
   .containerResponsiveOptionsHidden {
