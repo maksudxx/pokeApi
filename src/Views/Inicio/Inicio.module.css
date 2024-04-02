@@ -1,18 +1,40 @@
-.containerInicio{
-    width: 75%;
-    background: #fff;
-    height: 100vh;
+.containerInicio {
+  width: 75%;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.cardInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+.cardInicio img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.textCardInicio {
+  background: #30a7d7;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
 }
 
 @media (min-width: 700px) and (max-width: 850px) {
-    .containerInicio {
-      width: 90%;
-    }
+  .containerInicio {
+    width: 90%;
   }
-  
-  @media (min-width: 280px) and (max-width: 700px) {
-    .containerInicio {
-        width: 100%;
-        background: #f2f2f2;
-      }
+}
+
+@media (min-width: 280px) and (max-width: 700px) {
+  .containerInicio {
+    width: 100%;
+    background: #f2f2f2;
   }
+}
