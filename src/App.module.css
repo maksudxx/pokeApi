@@ -20,3 +20,16 @@
     flex-direction: column;
     align-items: center;
 }
+
+@media (min-width: 700px) and (max-width: 850px) {
+    
+    .containerWhite {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 280px) and (max-width: 700px) {
+    .containerWhite {
+        width: 100%;
+      }
+  }

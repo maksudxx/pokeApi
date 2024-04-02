@@ -3,3 +3,16 @@
     background: #fff;
     height: 100vh;
 }
+
+@media (min-width: 700px) and (max-width: 850px) {
+    .containerInicio {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 280px) and (max-width: 700px) {
+    .containerInicio {
+        width: 95%;
+        
+      }
+  }
