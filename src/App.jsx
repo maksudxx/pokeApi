@@ -1,11 +1,15 @@
 import { Inicio } from "./Views/Inicio/Inicio";
 import { PokeNavbar } from "./components/PokeNavbar/PokeNavbar";
-
+import styles from "./App.module.css";
 export const App = () => {
   return (
     <>
       <PokeNavbar />
-      <Inicio />
+      <div className={styles.containerRoot}>
+        <div className={styles.containerWhite}>
+
+        </div>
+      </div>
     </>
   );
 };
