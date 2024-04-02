@@ -7,7 +7,7 @@ export const App = () => {
       <PokeNavbar />
       <div className={styles.containerRoot}>
         <div className={styles.containerWhite}>
-
+          <Inicio />
         </div>
       </div>
     </>
