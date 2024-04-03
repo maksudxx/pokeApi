@@ -1,11 +1,10 @@
 .containerInicio {
   width: 75%;
   background: #fff;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
 }
 
 .cardInicio {
