@@ -14,6 +14,23 @@
   justify-content: center;
   align-items: center;
   width: 95%;
+  margin-top: 30px;
+  transition: transform 2s ease;
+}
+
+/*VIBRACION AL HACER HOVER*/
+@keyframes vibrar {
+  from {
+    transform: translateY(-3px); /* Comienza moviendo hacia arriba */
+  }
+  to {
+    transform: translateY(3px); /* Termina moviendo hacia abajo */
+  }
+}
+
+.cardInicio:hover {
+  cursor: pointer;
+  animation: vibrar 0.1s;
 }
 .cardInicio img {
   width: 100%;
@@ -24,11 +41,36 @@
   background: #30a7d7;
   width: 100%;
   border-radius: 0 0 5px 5px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.textCardInicio h3 {
+  color: #fff;
+  font-family: "Roboto Flex", sans-serif;
+  width: 90%;
+  font-size: 22px;
+  line-height: 28px;
 }
 
+.textCardInicio p {
+  width: 90%;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
 @media (min-width: 700px) and (max-width: 850px) {
   .containerInicio {
     width: 90%;
+  }
+  .cardInicio {
+    margin-top: 15px;
+  }
+  .textCardInicio h3 {
+    font-size: 20px;
   }
 }
 
@@ -36,5 +78,21 @@
   .containerInicio {
     width: 100%;
     background: #f2f2f2;
+  }
+  .cardInicio {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 600px) {
+  .textCardInicio {
+    height: 150px;
+  }
+  .textCardInicio h3 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .textCardInicio p {
+    font-size: 12px;
   }
 }
