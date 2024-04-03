@@ -21,19 +21,21 @@ export const Inicio = () => {
         </div>
       </section>
       <section className={styles.containerCardsInicio}>
-        <div>
+        <div className={styles.cardInfo}>
           <img src={imgEncuestaDragon} alt="" />
-          <p>Trivia de Pokémon de tipo dragón</p>
+          <p className={styles.yellow}>Trivia de Pokémon de tipo dragón</p>
         </div>
-        <div>
-          {" "}
+        <div className={styles.cardInfo}>
           <img src={imgEscarlataPurpura} alt="" />
-          <p>Escarlata y Púrpura-Fuerzas Temporales en JCC Pokémon live</p>
+          <p className={styles.blue}>
+            Escarlata y Púrpura-Fuerzas Temporales en JCC Pokémon live
+          </p>
         </div>
-        <div>
-          {" "}
+        <div className={styles.cardInfo}>
           <img src={imgJcc} alt="" />
-          <p>Ogerpon y sus máscaras llegan a JCC Pokémon</p>
+          <p className={styles.green}>
+            Ogerpon y sus máscaras llegan a JCC Pokémon
+          </p>
         </div>
       </section>
     </article>
