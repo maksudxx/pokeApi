@@ -1,5 +1,6 @@
 import { Inicio } from "./Views/Inicio/Inicio";
 import { PokeNavbar } from "./components/PokeNavbar/PokeNavbar";
+import { Footer } from "./components/Footer/Footer";
 import styles from "./App.module.css";
 export const App = () => {
   return (
@@ -10,6 +11,7 @@ export const App = () => {
           <Inicio />
         </div>
       </div>
+      <Footer />
     </main>
   );
 };
