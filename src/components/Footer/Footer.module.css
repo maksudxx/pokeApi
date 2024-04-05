@@ -1,0 +1,69 @@
+.footerContainer {
+  color: #fff;
+  background: #1f1f1f;
+  font-family: "Roboto Flex", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerContainerForm {
+  width: 60%;
+  margin-top: 40px;
+}
+.footerContainerInputForm {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.footerContainerInputForm input {
+  height: 25px;
+  border-radius: 5px;
+  width: 30%;
+}
+.footerContainerCheckbox {
+  display: flex;
+  margin-bottom: 10px;
+}
+.footerContainerCheckbox p {
+  margin-left: 10px;
+}
+
+.footerFormSubmit {
+  height: 60px;
+  width: 150px;
+  border-radius: 10px;
+  background: #808080;
+  color: #fff;
+  font-weight: bold;
+  border: 2px solid #fff;
+}
+.footerFormSubmit:hover {
+  cursor: pointer;
+}
+
+.footerContainerContact {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.columnInfo {
+  width: 33%;
+  
+}
+.containerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerSocial{
+    width: 33%;
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+}
+
+.containerInfoPrivacity{
+    width: 33%;
+}
