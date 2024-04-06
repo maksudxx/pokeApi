@@ -17,16 +17,24 @@
   margin: 10px 0;
 }
 .footerContainerInputForm input {
-  height: 25px;
-  border-radius: 5px;
+  height: 35px;
+  border-radius: 8px;
   width: 30%;
+}
+
+.footerContainerInputForm input::placeholder {
+  padding-left: 10px;
+}
+
+.footerContainerInputForm select {
+  border-radius: 8px;
 }
 .footerContainerCheckbox {
   display: flex;
-  margin-bottom: 10px;
+  margin: 20px 0;
 }
 .footerContainerCheckbox p {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .footerFormSubmit {
@@ -36,6 +44,7 @@
   background: #808080;
   color: #fff;
   font-weight: bold;
+  font-size: 15px;
   border: 2px solid #fff;
 }
 .footerFormSubmit:hover {
@@ -51,19 +60,107 @@
 }
 .columnInfo {
   width: 33%;
-  
 }
 .containerLinks {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
-.containerSocial{
-    width: 33%;
-    border-left: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
+.containerLinks p {
+  margin: 8px 0;
 }
 
-.containerInfoPrivacity{
-    width: 33%;
+.containerLinks p:hover {
+  cursor: pointer;
+}
+
+.containerSocial {
+  width: 33%;
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+}
+
+.containerIcons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facebookLogo {
+  font-size: 35px;
+  color: #0866ff;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.youtubeLogo {
+  font-size: 35px;
+  color: #ff0000;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.twitterLogo {
+  font-size: 35px;
+  color: #1d9bf0;
+  background: #fff;
+  border-radius: 5px;
+}
+.containerInfoPrivacity {
+  width: 33%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerInfoPrivacity img {
+  width: 150px;
+  margin-left: 50px;
+}
+
+.containerInfoPrivacity p {
+  margin-left: 50px;
+}
+.containerInfoPrivacity p:hover {
+  cursor: pointer;
+}
+
+.containerInfoPrivacity div {
+  font-size: 10px;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 280px) and (max-width: 650px) {
+  
+
+  .footerContainerForm {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerContainerInputForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+    margin-top: 20px;
+  }
+  .footerContainerInputForm input, select{
+    width: 75%;
+    height: 30px;
+  }
+
+  .formResponsive{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerFormSubmit{
+    align-self: center;
+    height: 40px;;
+  }
 }
