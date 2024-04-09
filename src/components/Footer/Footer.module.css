@@ -133,8 +133,9 @@
 /*RESPONSIVE*/
 
 @media (min-width: 280px) and (max-width: 650px) {
-  
-
+  .footerContainer h2{
+    font-size: 15px;
+  }
   .footerContainerForm {
     width: 90%;
     display: flex;
@@ -149,18 +150,39 @@
     height: 130px;
     margin-top: 20px;
   }
-  .footerContainerInputForm input, select{
+  .footerContainerInputForm input,
+  select {
     width: 75%;
     height: 30px;
   }
 
-  .formResponsive{
+  .footerContainerCheckbox {
+    width: 75%;
+    align-self: center;
+  }
+  .formResponsive {
     display: flex;
     flex-direction: column;
   }
 
-  .footerFormSubmit{
+  .footerFormSubmit {
     align-self: center;
-    height: 40px;;
+    height: 40px;
   }
+
+  .footerContainerContact {
+    width: 60%;
+  }
+  .columnInfo {
+    display: none;
+  }
+  .containerSocial {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .containerInfoPrivacity {
+    display: none;
+  }
+
 }
