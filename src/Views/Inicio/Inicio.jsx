@@ -23,18 +23,12 @@ export const Inicio = () => {
       <section className={styles.containerCardsInicio}>
         <div className={styles.cardInfo}>
           <img src={imgEncuestaDragon} alt="" />
-          <p className={styles.yellow}>Trivia de Pokémon de tipo dragón</p>
+          <p className={styles.yellow}> Nueva trivia de Pokémon por el año nuevo del Dragón 2024</p>
         </div>
         <div className={styles.cardInfo}>
           <img src={imgEscarlataPurpura} alt="" />
           <p className={styles.blue}>
             Escarlata y Púrpura-Fuerzas Temporales en JCC Pokémon live
-          </p>
-        </div>
-        <div className={styles.cardInfo}>
-          <img src={imgJcc} alt="" />
-          <p className={styles.green}>
-            Ogerpon y sus máscaras llegan a JCC Pokémon
           </p>
         </div>
       </section>
