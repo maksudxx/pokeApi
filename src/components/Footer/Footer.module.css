@@ -186,3 +186,16 @@
   }
 
 }
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .footerContainerForm {
+    width: 90%;
+  }
+  .footerFormSubmit{
+    height: 50px;
+    width: 120px;;
+  }
+  .footerContainerContact {
+    width: 90%;
+  }
+}
