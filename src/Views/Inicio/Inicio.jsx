@@ -2,7 +2,6 @@ import styles from "./Inicio.module.css";
 import imgInicio from "../../assets/Images/Imagen-Inicio.png";
 import imgEncuestaDragon from "../../assets/Images/imagen-encuesta-dragon.png";
 import imgEscarlataPurpura from "../../assets/Images/Escarlata-y-purpura.png";
-import imgJcc from "../../assets/Images/JCC.gif";
 export const Inicio = () => {
   return (
     <article className={styles.containerInicio}>
