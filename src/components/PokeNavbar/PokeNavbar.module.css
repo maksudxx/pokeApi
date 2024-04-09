@@ -6,6 +6,10 @@
   font-family: "Orbitron", sans-serif;
   font-size: 0.8em;
   margin: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 9999;
 }
 
 .navContainer {
