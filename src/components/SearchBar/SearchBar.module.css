@@ -1,6 +1,9 @@
 .searchBarContainer {
   font-family: Flexo-Regular, arial, sans-serif;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .searchBarContainerTitle {
   color: #919191;
@@ -70,4 +73,22 @@
   display: grid;
   place-items: center;
   text-align: center;
+}
+
+.advancedSearch {
+  background: #616161;
+  color: #fff;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advancedSearch div {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+}
+.advancedSearch div:hover{
+    cursor: pointer;
+    color: #919191;
 }

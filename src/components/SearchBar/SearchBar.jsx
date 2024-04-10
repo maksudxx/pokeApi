@@ -1,5 +1,6 @@
 import styles from "./SearchBar.module.css";
 import { FaSearch } from "react-icons/fa";
+import { LuFileSearch } from "react-icons/lu";
 
 export const SearchBar = () => {
   return (
@@ -23,6 +24,12 @@ export const SearchBar = () => {
           <p>
             Busca un Pokémon por su nombre o usando su número de la Pokedex.
           </p>
+        </div>
+      </div>
+      <div className={styles.advancedSearch}>
+        <div>
+        <p>Mostrar busqueda Avanzada</p>
+        <LuFileSearch />
         </div>
       </div>
     </nav>
