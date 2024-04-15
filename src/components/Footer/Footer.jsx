@@ -15,8 +15,8 @@ export const Footer = () => {
             <input type="email" placeholder="Correo electronico" />
             <select name="" id="">
               <option value="">Selecciona tu país</option>
-              {paises.map(({ name }, key) => (
-                <option value={name}>{name}</option>
+              {paises.map(({ name }, index) => (
+                <option value={name} key={index}>{name}</option>
               ))}
             </select>
             <input type="date" placeholder="Fecha de Nacimiento" />
