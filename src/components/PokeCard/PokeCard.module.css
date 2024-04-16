@@ -1,0 +1,93 @@
+.cardContainer {
+  width: 250px;
+  background: #f3f3f3;
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.cardContainerInfo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cardContainerTypes {
+  width: 80%;
+  display: flex;
+  color: #ffffff;
+  justify-content: space-evenly;
+}
+.cardContainerTypes p {
+  height: 20px;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  border: 1px solid #000000;
+}
+
+/* Tipos de Pokemon */
+.normal {
+  background: var(--tipo-normal);
+}
+.lucha {
+  background: var(--tipo-lucha);
+}
+
+.volador {
+  background: var(--tipo-volador);
+}
+.veneno {
+  background: var(--tipo-veneno);
+}
+.tierra {
+  background: var(--tipo-tierra);
+}
+.roca {
+  background: var(--tipo-roca);
+}
+.bicho {
+  background: var(--tipo-bicho);
+}
+.fantasma {
+  background: var(--tipo-fantasma);
+}
+.acero {
+  background: var(--tipo-acero);
+}
+
+.fuego {
+  background: var(--tipo-fuego);
+}
+
+.agua {
+  background: var(--tipo-agua);
+}
+
+.planta {
+  background: var(--tipo-planta);
+}
+.electrico {
+  background: var(--tipo-electrico);
+}
+
+.psiquico {
+  background: var(--tipo-psiquico);
+}
+
+.hielo {
+  background: var(--tipo-hielo);
+}
+
+.dragon {
+  background: var(--tipo-dragon);
+}
+
+.siniestro {
+  background: var(--tipo-siniestro);
+}
+.hada {
+  background: var(--tipo-hada);
+}
