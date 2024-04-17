@@ -19,3 +19,18 @@ export const getPokemonAll = async (listPokemon) => {
 
   return listPokemon;
 };
+
+export const getGifPokemon = async () => {
+  const pokemonNumber = Math.floor(Math.random() * 150) + 1;
+  const urlPokemon = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
+  const response = await fetch(urlPokemon);
+  const { sprites } = await response.json();
+  const {
+    other: {
+      showdown: { front_default },
+    },
+  } = sprites;
+  console.log(front_default);
+};
+
+getGifPokemon();
