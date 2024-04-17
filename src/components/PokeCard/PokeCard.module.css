@@ -1,22 +1,38 @@
+/*VIBRACION AL HACER HOVER*/
+@keyframes vibrar {
+  from {
+    transform: translateY(-3px); /* Comienza moviendo hacia arriba */
+  }
+  to {
+    transform: translateY(3px); /* Termina moviendo hacia abajo */
+  }
+}
+
 .cardContainer {
   width: 250px;
-  background: #f3f3f3;
+  background: #858585;
   font-family: "Orbitron", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 300px;
+  border-radius: 10px;
+  color: #fff;
 }
-.cardContainerInfo{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+.cardContainer:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  animation: vibrar 0.1s;
+}
+.cardContainerInfo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .cardContainerTypes {
   width: 80%;
   display: flex;
-  color: #ffffff;
   justify-content: space-evenly;
 }
 .cardContainerTypes p {
