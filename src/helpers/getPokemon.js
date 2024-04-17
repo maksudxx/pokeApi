@@ -21,7 +21,7 @@ export const getPokemonAll = async (listPokemon) => {
 };
 
 export const getGifPokemon = async () => {
-  const pokemonNumber = Math.floor(Math.random() * 150) + 1;
+  const pokemonNumber = Math.floor(Math.random() * 500) + 1;
   const urlPokemon = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
   const response = await fetch(urlPokemon);
   const { sprites } = await response.json();
