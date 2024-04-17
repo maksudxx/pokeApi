@@ -17,7 +17,7 @@
   width: 100%;
   color: #fff;
   display: flex;
-  height: 200px;
+  height: 220px;
   justify-content: space-between;
 }
 .searchColumnOne {
@@ -91,4 +91,38 @@
 .advancedSearch div:hover{
     cursor: pointer;
     color: #919191;
+}
+
+@media(min-width:850px) and (max-width:1200px){
+  .searchContainer{
+    height: 200px;
+  }
+  .searchColumnOne{
+    width: 55%;
+  }
+  .searchColumnOne h2{
+    padding: 10px ;
+  }
+  .searchColumnOne p {
+    font-size: 13px;;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .inputsContainer {
+    width: 90%;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .inputsContainer input {
+    height: 30px;
+    margin: 0 10px 
+  }
+  .searchButton {
+    height: 32px;
+    margin: 0 5px 
+  }
+  .searchColumnTwo p {
+    font-size: 15px;
+  }
+
 }
