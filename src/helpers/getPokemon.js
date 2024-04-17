@@ -25,10 +25,8 @@ export const getGifPokemon = async () => {
   const urlPokemon = `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
   const response = await fetch(urlPokemon);
   const { sprites } = await response.json();
-  const {
-    other: {
-      showdown: { front_default },
-    },
-  } = sprites;
-  return front_default;
+  const gifPokemon =
+    sprites.other["showdown"].front_default || sprites.front_default;
+  console.log(gifPokemon);
+  return gifPokemon;
 };
