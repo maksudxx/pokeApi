@@ -30,7 +30,5 @@ export const getGifPokemon = async () => {
       showdown: { front_default },
     },
   } = sprites;
-  console.log(front_default);
+  return front_default;
 };
-
-getGifPokemon();
