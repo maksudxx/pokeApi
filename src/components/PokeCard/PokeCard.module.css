@@ -25,6 +25,10 @@
   opacity: 0.8;
   animation: vibrar 0.1s;
 }
+.cardContainer h3{
+  width: 100%;
+  text-align: center;
+}
 .cardContainerInfo {
   display: flex;
   justify-content: space-evenly;

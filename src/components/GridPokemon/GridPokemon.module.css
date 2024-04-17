@@ -6,3 +6,18 @@
     justify-content: center;
     margin-bottom: 40px;
 }
+
+.gridButtonPokemon{
+    height: 60px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: var(--tipo-volador);
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;;
+}
+
+.gridButtonPokemon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
