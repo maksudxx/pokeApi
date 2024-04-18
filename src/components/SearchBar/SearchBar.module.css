@@ -87,25 +87,25 @@
   display: flex;
   justify-content: space-between;
 }
-.advancedSearch div:hover{
-    cursor: pointer;
-    color: #919191;
+.advancedSearch div:hover {
+  cursor: pointer;
+  color: #919191;
 }
-.advancedSearch div p{
+.advancedSearch div p {
   margin-right: 10px;
 }
-@media(min-width:850px) and (max-width:1200px){
-  .searchContainer{
+@media (min-width: 850px) and (max-width: 1200px) {
+  .searchContainer {
     height: 200px;
   }
-  .searchColumnOne{
+  .searchColumnOne {
     width: 55%;
   }
-  .searchColumnOne h2{
-    padding: 10px ;
+  .searchColumnOne h2 {
+    padding: 10px;
   }
   .searchColumnOne p {
-    font-size: 13px;;
+    font-size: 13px;
     padding-left: 10px;
     font-weight: bold;
   }
@@ -116,13 +116,49 @@
   }
   .inputsContainer input {
     height: 30px;
-    margin: 0 10px 
+    margin: 0 10px;
   }
   .searchButton {
     height: 32px;
-    margin: 0 5px 
+    margin: 0 5px;
   }
   .searchColumnTwo p {
     font-size: 15px;
   }
+}
+
+@media (min-width: 320px) and (max-width: 680px) {
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-bottom: 15px;
+  }
+  .searchBarContainer h2{
+    text-align: center;
+  }
+  .searchColumnOne {
+    width: 100%;
+  }
+  .searchColumnOne p{
+    text-align: center;
+  }
+  .searchColumnTwo {
+    width:80%;
+  }
+  .inputsContainer{
+    justify-content: space-evenly;
+  }
+  .searchButton {
+    height: 36px;
+    width: 35px;
+  }
+  .inputsContainer input {
+    width: 70%;
+    height: 35px;
+    margin: 0;
+  }
+ 
 }
