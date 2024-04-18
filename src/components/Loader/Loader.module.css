@@ -10,8 +10,7 @@
   width: 200px;
   height: 200px;
   margin-bottom: 25px;
-  object-fit: contain
-  
+  object-fit: contain;
 }
 .loading {
   font-size: 24px;
@@ -33,5 +32,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .container img {
+    height: 150px;
+    width: 150px;
+  }
+  .loading span {
+    font-size: 35px;
   }
 }
