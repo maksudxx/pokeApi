@@ -1,28 +1,66 @@
+import { useForm } from "../../hooks/useForm";
 import { paises } from "../../data/ListaPaises";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaSquareYoutube } from "react-icons/fa6";
 import ImgPrivacidad from "../../assets/Images/politica-de-privacidad.png";
-
 import styles from "./Footer.module.css";
+import { useEffect, useState } from "react";
+
 export const Footer = () => {
+  const { formState, onInputChange } = useForm({
+    email: "",
+    fechaNacimiento: "",
+    pais: "",
+    terminosYCondiciones: false,
+  });
+
+  const { email, fechaNacimiento, pais, terminosYCondiciones } = formState;
+  const [isChecked, setIsChecked] = useState(terminosYCondiciones);
+
+  const handleCheckboxChange = () => {
+    const newChecked = !isChecked;
+    setIsChecked(newChecked);
+    onInputChange({ target: { name: "terminosYCondiciones", value: newChecked } });
+  };
+
+  
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContainerForm}>
         <h2>¡Regístrate para recibir correos electrónicos de Pokémon!</h2>
         <form action="" className={styles.formResponsive}>
           <div className={styles.footerContainerInputForm}>
-            <input type="email" placeholder="Correo electronico" />
-            <select name="" id="">
-              <option value="">Selecciona tu país</option>
+            <input
+              type="email"
+              placeholder="Correo electronico"
+              name="email"
+              value={email}
+              onChange={(event) => onInputChange(event)}
+            />
+            <select name="pais" onChange={(event) => onInputChange(event)}>
+              <option value={pais}>Selecciona tu país</option>
               {paises.map(({ name }, index) => (
-                <option value={name} key={index}>{name}</option>
+                <option value={name} key={index}>
+                  {name}
+                </option>
               ))}
             </select>
-            <input type="date" placeholder="Fecha de Nacimiento" />
+            <input
+              type="date"
+              placeholder="Fecha de Nacimiento"
+              name="fechaNacimiento"
+              value={fechaNacimiento}
+              onChange={(event) => onInputChange(event)}
+            />
           </div>
           <div className={styles.footerContainerCheckbox}>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              value={terminosYCondiciones}
+              checked={isChecked}
+              onChange={(event) => handleCheckboxChange(event)}
+            />
             <p>Acepto los Términos de uso y la Política de privacidad</p>
           </div>
           <input
