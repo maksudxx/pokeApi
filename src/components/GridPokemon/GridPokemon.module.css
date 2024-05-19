@@ -1,3 +1,9 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .gridContainer {
     width: 100%;
     display: grid;
@@ -9,12 +15,14 @@
 
 .gridButtonPokemon{
     height: 60px;
+    width: 250px;
     font-size: 1.2rem;
     border-radius: 10px;
     background: var(--tipo-volador);
     color: #fff;
     margin-top: 20px;
-    font-weight: bold;;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .gridButtonPokemon:hover{

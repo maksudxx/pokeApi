@@ -12,22 +12,25 @@ export const GridPokemon = ({ pokemon }) => {
   const pokemonToShow = pokemon.slice(0, startIndex + 30);
 
   return (
-    <div className={styles.gridContainer}>
-      {pokemonToShow?.map(
-        ({ id, name, height, sprites, stats, weight, types }) => (
-          <PokeCard
-            id={id}
-            name={name}
-            height={height}
-            sprites={sprites}
-            stats={stats}
-            weight={weight}
-            types={types}
-          />
-        )
-      )}
-      <div></div>
-      <button onClick={handleNextClick} className={styles.gridButtonPokemon}>Ver mas...</button>
+    <div className={styles.mainContainer}>
+      <div className={styles.gridContainer}>
+        {pokemonToShow?.map(
+          ({ id, name, height, sprites, stats, weight, types }) => (
+            <PokeCard
+              id={id}
+              name={name}
+              height={height}
+              sprites={sprites}
+              stats={stats}
+              weight={weight}
+              types={types}
+            />
+          )
+        )}
+      </div>
+      <button onClick={handleNextClick} className={styles.gridButtonPokemon}>
+        Ver mas...
+      </button>
     </div>
   );
 };
