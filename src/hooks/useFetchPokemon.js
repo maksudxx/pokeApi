@@ -5,14 +5,15 @@ export const useFetchPokemon = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [pokemon, setPokemon] = useState([]);
 
+  const getPokemon = async () => {
+    const newPokemon = await getPokemonAll(pokemon);
+    setPokemon(newPokemon);
+    setIsLoading(false);
+  };
+
   useEffect(() => {
-    const getPokemon = async () => {
-      const newPokemon = await getPokemonAll(pokemon);
-      setPokemon(newPokemon);
-      setIsLoading(false);
-    };
     getPokemon();
-  }, []);
+  }, [pokemon]);
 
   return { pokemon, isLoading };
 };
