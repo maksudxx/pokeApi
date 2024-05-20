@@ -1,3 +1,7 @@
+const localCache1 = {};
+const localCache2 = {};
+const localCache3 = {};
+
 export const getPokemonAll = async (listPokemon) => {
   let limit = 25;
   let offset = 0;
@@ -12,9 +16,12 @@ export const getPokemonAll = async (listPokemon) => {
       const { id, name, weight, height, sprites, types, stats } =
         await response.json();
       listPokemon.push({ id, name, weight, height, sprites, types, stats });
+      localCache1[url] = response;
     }
 
     offset += 25;
+    //manejo del Caché
+    localCache2[urlPokemon] = pokemon;
   }
 
   return listPokemon;
@@ -27,6 +34,6 @@ export const getGifPokemon = async () => {
   const { sprites } = await response.json();
   const gifPokemon =
     sprites.other["showdown"].front_default || sprites.front_default;
-  console.log(gifPokemon);
+  localCache3[urlPokemon] = response;
   return gifPokemon;
 };
