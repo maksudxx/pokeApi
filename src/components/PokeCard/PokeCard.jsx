@@ -49,8 +49,8 @@ export const PokeCard = ({
         #{id} {name}
       </h3>
       <div className={styles.cardContainerInfo}>
-        <h5>Altura: {height}0cm</h5>
-        <h5>peso: {weight}kg</h5>
+        <h5>Altura: {height/10} m.</h5>
+        <h5>peso: {weight/10} kg.</h5>
       </div>
       <div className={styles.cardContainerTypes}>
         {types.map(({ type }) => (
