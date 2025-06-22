@@ -11,6 +11,7 @@ export const getPokemonAll = async (listPokemon) => {
     const pokemon = await fetch(urlPokemon);
     const { results } = await pokemon.json();
 
+    console.log(results);
     for (const { url } of results) {
       const response = await fetch(url);
       const { id, name, weight, height, sprites, types, stats } =
